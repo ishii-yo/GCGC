@@ -8,3 +8,4 @@ src/graphing/__pycache__
 .venv/
 .python-version
 /gc_logs/
+src/drsum/__pycache__

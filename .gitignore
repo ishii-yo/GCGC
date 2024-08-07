@@ -5,3 +5,6 @@ src/graphing/__pycache__
 *.DS_Store
 .idea
 *.class
+.venv/
+.python-version
+/gc_logs/

@@ -12,7 +12,7 @@ def dump_gc_log(output_path: str, conn: dict, exp: str = "") -> None:
     """
     sql = "select gc_log from log_gc_log;"
     if exp:
-        sql = f"select gc_log from log_gc_log where {exp};"
+        sql = f"select gc_log from log_gc_log where {exp} order by time_str;"
     # with open(output_path, "w", encoding='utf8', newline='') as f:
     #     for line in select(conn, sql):
     #         f.write(line[0] + '\n')
